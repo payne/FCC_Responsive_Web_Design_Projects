@@ -36,7 +36,54 @@
 	  <label id="name-label">Name:<input id="name" type="text" placeholder="Matt" required></label>
 	  <label id="email-label">Email:<input id="email" type="email" placeholder="Payne" required></label>
 	  <br>
-	  <label id="number-label">How many times a week do you eat lunch? <input id="number" type="number" min=0 max=7 required placeholder="5"></label>
+	  <label id="number-label">How many times a week do you eat? <input id="number" type="number" min=0 max=7 required placeholder="5"></label>
+	  <br>
+	  <label>Which event do you prefer to socialize over?
+	  <select id="dropdown">
+		  <option>Breakfast</option>
+		  <option>Morning Coffee</option>
+		  <option>Lunch</option>
+		  <option>Dinner</option>
+		  <option>After dinner at the pub</option>
+	  </select>
+	  </label>
+	  <br>
+	  <label>How likely is it that you will recomend 54Lunch.com to someone?
+		  <ul>
+		    <li>
+			  <input type="radio" name="nps" value="3" id="nps3">
+			  <label for="nps3">For sure!</label>
+			    </li><li>
+			  <input type="radio" name="nps" value="2" id="nps2">
+			  <label for="nps2">Maybe...</label>
+			    </li><li>
+			  <input type="radio" name="nps" value="1" id="nps1">
+			  <label for="nps1">Hell no!</label>
+			    </li>
+		  </ul>
+	  </label>
+	  <br>
+	  <label>What features would you like added to 54Lunch.com?
+		  <ul>
+			  <li>
+				  <!-- TODO(MGP): What is semantic difference between id, name, & value? -->
+				  <input type="checkbox" id="reminders" name="reminders" value="reminders">
+				  <label for="reminders">Reminders to show up for the event!</label>
+			  </li><li>
+			  	<input type="checkbox" id="reviews" name="reviews" value="reviews">
+				<label for="reviews">Reviews of locations to meet</label>
+			  </li>
+		  </ul>
+	  </label>
+	  <br>
+	  <label>Suggestions for 54Lunch.com?
+		  <textarea rows=10 cols=60 name="suggestions">
+		  </textarea>
+	  </label>
+	  <br>
+	  <label>Submit your feedback and feel good!
+		  <input type="submit">
+	  </label>
   </form>
   </center>
 
